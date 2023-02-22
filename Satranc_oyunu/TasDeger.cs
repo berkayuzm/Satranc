@@ -6,8 +6,9 @@ using System.Threading.Tasks;
 
 namespace Satranc_oyunu
 {
-    internal class TasDeger
+    internal static class TasDeger
     {
+        //Program boyunca kullanılacak olan taşların sembollerini ve değerlerini belirttiğimiz sınıf
         public static int Piyon_deger = 1;
         public static int At_deger = 3;
         public static int Fil_deger = 3;

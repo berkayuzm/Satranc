@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace Satranc_oyunu
 {
+    //Tüm satranç taşlarının özellik aldığı üst sınıf
     internal class Chesspiece
     {
         public int PosX;

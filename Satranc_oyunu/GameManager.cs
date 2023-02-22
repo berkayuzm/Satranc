@@ -12,6 +12,7 @@ namespace Satranc_oyunu
       
         public void  ReadBoard(string filePath)
         {
+            //Boards klasörünün altındaki txt dosyalarını okuyup consol ekranına yazdıran fonksiyon
             var rows = new string[]
             {
                 "1","2","3","4","5","6","7","8"
@@ -24,13 +25,7 @@ namespace Satranc_oyunu
             {
                 var str = sr.ReadToEnd();
                 var boardrows = str.Split('\n');
-                var keys = boardrows.Select((x, rowIndex) => x.Split(' ').Select((y, colIndex) => new
-                {
-                    key = y,
-                    row = rows[rowIndex],
-                    col = cols[colIndex]
-                }).Where(k => k.key != "--")).SelectMany(b => b).ToList();
-
+                
                 foreach (var row in boardrows)
                 {
                     Console.WriteLine(row);

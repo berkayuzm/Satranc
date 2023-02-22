@@ -9,7 +9,7 @@ namespace Satranc_oyunu
     internal class Piyon : Chesspiece,IChesspiece
     {
 
-      
+      //Piyon sınıfı üst sınıftan özelliklerini alır.
         public Piyon(int PosX,int PosY, int Score, string type)
         {
             
@@ -19,14 +19,5 @@ namespace Satranc_oyunu
             this.type = type;
         }
 
-        //public int[] tehdit_et()
-        //{
-        //    //if (this.type == "sp")
-        //    //{
-        //    //    return new 
-        //    //}
-
-        //    //return [this.PosX - 1, this.PosY + 1];
-        //}
     }
 }

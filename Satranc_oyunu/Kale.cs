@@ -8,6 +8,7 @@ namespace Satranc_oyunu
 {
     internal class Kale:Chesspiece,IChesspiece
     {
+
         public Kale(int PosX, int PosY, int Score, string type)
         {
 
